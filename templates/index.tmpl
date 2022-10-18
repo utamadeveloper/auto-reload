@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <title>Template</title>
+  </head>
+  <body>
+    <table style="border:1px solid black">
+      <thead>
+        <tr>
+          <th style="border:1px solid black;text-style:bold;">Wind Level</th>
+          <th style="border:1px solid black"text-style:bold;>Wind Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="border:1px solid black">{{ .windValue}} mph</td>
+          <td style="border:1px solid black">{{ .wind }}</td>
+        </tr>
+      </tbody>
+    </table>
+    <br>
+    <table style="border:1px solid black">
+      <thead>
+        <tr>
+          <th style="border:1px solid black;text-style:bold;">Water Level</th>
+          <th style="border:1px solid black"text-style:bold;>Water Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="border:1px solid black">{{ .waterValue}} meter</td>
+          <td style="border:1px solid black">{{ .water }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+  <script>
+    setTimeout(function() {
+      location.reload();
+    }, 7500);
+  </script>
+</html>
